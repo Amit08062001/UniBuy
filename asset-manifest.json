@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/UniBuy/static/css/main.58c7bda2.css",
-    "main.js": "/UniBuy/static/js/main.ea1cff46.js",
+    "main.js": "/UniBuy/static/js/main.36c62edf.js",
     "index.html": "/UniBuy/index.html",
     "main.58c7bda2.css.map": "/UniBuy/static/css/main.58c7bda2.css.map",
-    "main.ea1cff46.js.map": "/UniBuy/static/js/main.ea1cff46.js.map"
+    "main.36c62edf.js.map": "/UniBuy/static/js/main.36c62edf.js.map"
   },
   "entrypoints": [
     "static/css/main.58c7bda2.css",
-    "static/js/main.ea1cff46.js"
+    "static/js/main.36c62edf.js"
   ]
 }
