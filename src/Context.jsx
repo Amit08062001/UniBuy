@@ -6,13 +6,13 @@ export const userContext = createContext();  // Create context to manage product
 const Context = (props) => {
   // Initialize state for product data with fallback to localStorage or null
   const [product, setProduct] = useState(() => {
-    return JSON.parse(localStorage.getItem('product')) || null;
+    return JSON.parse(localStorage.getItem('product')) || null;  // Check localStorage first
   });
 
   // Sync product state with localStorage whenever it changes
   useEffect(() => {
     if (product !== null) {
-      localStorage.setItem('product', JSON.stringify(product));  // Store in localStorage
+      localStorage.setItem('product', JSON.stringify(product));  // Store in localStorage when product is updated
     }
   }, [product]);
 
@@ -21,9 +21,9 @@ const Context = (props) => {
     const getProduct = async () => {
       try {
         const { data } = await axios.get('/products');  // Adjust the API endpoint as necessary
-        setProduct(data);
+        setProduct(data);  // Update the product state with fetched data
       } catch (error) {
-        console.error('Error fetching products:', error);
+        console.error('Error fetching products:', error);  // Handle any errors during the fetch
       }
     };
 
