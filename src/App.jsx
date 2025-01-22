@@ -1,6 +1,6 @@
 import Home from './Home'
 import './App.css'
-import {Routes,Route, Link} from 'react-router-dom'
+import {Routes,Route} from 'react-router-dom'
 import Details from './Details'
 import Create from './Create'
 

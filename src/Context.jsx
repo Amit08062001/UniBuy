@@ -1,5 +1,6 @@
 import axios from './utils/Axios'; // Make sure axios is properly set up
-import React, { useEffect, useState, createContext } from 'react';
+import  { useEffect, useState, createContext } from 'react';
+import PropTypes from 'prop-types';  // Import PropTypes
 
 export const userContext = createContext();  // Create context to manage product data
 
@@ -36,6 +37,11 @@ const Context = (props) => {
       {props.children}  {/* Provide product data to child components */}
     </userContext.Provider>
   );
+};
+
+// Add PropTypes validation for the `children` prop
+Context.propTypes = {
+  children: PropTypes.node.isRequired,  // `children` should be any valid React node and is required
 };
 
 export default Context;

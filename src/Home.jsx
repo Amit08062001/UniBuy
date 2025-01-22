@@ -1,6 +1,6 @@
-import React, { useContext, useEffect, useState } from 'react'
+import  { useContext, useEffect, useState } from 'react'
 import Navbar from './Navbar'
-import Card from './Card'
+
 import { userContext } from './Context'
 import { Link, useLocation } from 'react-router-dom'
 import axios from './utils/Axios'
@@ -13,16 +13,16 @@ const Home = () => {
  
   console.log(search,pathname);
   
-  const getCategory = async() =>{
-     try {
-     const  {data} = await axios.get(`/products/category/${category}`)
-     setFiltered(data)
+ // const getCategory = async() =>{
+   //  try {
+    // const  {data} = await axios.get(`/products/category/${category}`)
+   //  setFiltered(data)
      
-     } catch (error) {
-       console.log(error);
+    // } catch (error) {
+     //  console.log(error);
        
-     }
-  }
+    // }
+ // }
   useEffect(() => {
     if (!category || category === 'undefined') {
       setFiltered(product)
