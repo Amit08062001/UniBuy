@@ -8,7 +8,7 @@ import Context from './Context.jsx'
 ReactDOM.createRoot(document.getElementById('root')).render(
  
    <Context>
-      <HashRouter basename='/UniBuy'>
+      <HashRouter>
       <App />
       </HashRouter>
     </Context> 
