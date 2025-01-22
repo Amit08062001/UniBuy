@@ -3,7 +3,7 @@ import Navbar from './Navbar'
 
 import { userContext } from './Context'
 import { Link, useLocation } from 'react-router-dom'
-import axios from './utils/Axios'
+//import axios from './utils/Axios'
 const Home = () => {
   const [product] = useContext(userContext)
   const {search,pathname} =useLocation()
