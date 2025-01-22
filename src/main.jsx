@@ -8,7 +8,7 @@ import Context from './Context.jsx'
 ReactDOM.createRoot(document.getElementById('root')).render(
  
    <Context>
-      <BrowserRouter>
+      <BrowserRouter basename='/UniBuy'>
       <App />
       </BrowserRouter>
     </Context> 
